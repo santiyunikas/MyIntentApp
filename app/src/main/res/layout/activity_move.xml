@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MoveActivity"
-    android:padding="20px">
+    android:padding="20px"
+    android:orientation="vertical">
 
     <TextView
         android:layout_width="match_parent"
@@ -14,4 +15,47 @@
         android:gravity="center"
         android:id="@+id/tvMove"/>
 
-</RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/line_lay_inside">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pilih salah satu angka dibawah ini:"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10"
+                android:id="@+id/radioButton10"
+                android:onClick="onRadioButtonClicked"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20"
+                android:id="@+id/radioButton20"
+                android:onClick="onRadioButtonClicked"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30"
+                android:id="@+id/radioButton30"
+                android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Result"
+            android:id="@+id/btn_result"/>
+    </LinearLayout>
+
+</LinearLayout>

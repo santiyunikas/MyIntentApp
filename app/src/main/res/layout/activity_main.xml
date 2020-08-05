@@ -21,10 +21,28 @@
         android:id="@+id/btn_move_activity_w_data"/>
 
     <Button
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="@string/move_activity_with_object"
+        android:id="@+id/btn_move_activity_w_object"/>
+
+    <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/dial_a_number"
         android:id="@+id/dial_a_number"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/move_activity_for_result"
+        android:id="@+id/btn_move_activity_for_result"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hasil"
+        android:id="@+id/tv_result"
+        android:gravity="center"/>
 
 </LinearLayout>
